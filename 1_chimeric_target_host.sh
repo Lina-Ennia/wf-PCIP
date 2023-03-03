@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+GENOME=~/wf-PCIP/RefSeq/host/GRCh38.p14.fasta
+TARGET=~/wf-PCIP/RefSeq/target/NC_001802.1.fasta
+
+mkdir TARGETHOST_INDEX
+cd TARGETHOST_INDEX
+
+cat $GENOME $TARGET > BTA_BLV.fa
+
+TARGETHOST=~/wf-PCIP/TARGETHOST_INDEX/BTA_BLV.fa
